@@ -1,0 +1,128 @@
+body {
+  background: #111;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5em;
+  background: linear-gradient(to right, #ff4b2b, #00ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 15px 0 10px; 
+  color: #ff4b2b;
+  padding: 15px 0;
+  line-height: 4.5;
+  height: 15px; 
+  min-height: 60px;
+}
+
+.card-container {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.15);
+}
+
+.card.red {
+  box-shadow: 0 0 20px #ff4b2b, 0 0 40px #ff4b2b;
+  background-image: url("Vijay.jfif");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.date-box {
+  background: linear-gradient(rgb(255 194 194 / 70%), rgb(110 61 61 / 70%)),
+    url(https://www.freeiconspng.com/uploads/calendar-icon-1.png);
+  background-size: 50%, cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  color: white;
+  display: inline-block;
+  padding: 10px 50px 10px 10px;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 15px;
+  position: relative;
+  border: 1px solid rgb(227 193 193 / 70%);
+}
+
+.date-box span {
+  display: block;
+  font-size: 14px;
+}
+
+.date-box strong {
+  font-size: 20px;
+  color: #ff4b2b;
+}
+
+.card h2 {
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.red a {
+  color: #ff4b2b;
+}
+
+.additional-info {
+  display: none;
+  margin-top: 30px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 45px;
+  font-weight: medium;
+}
+
+.additional-info.active {
+  display: block;
+}
+
+.copyright {
+  background-color: #000000;
+  padding: 10px 0;
+  margin-top: 85px;
+  text-align: center;
+}
+
+.copyright p {
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-size: 0.9em;
+}
