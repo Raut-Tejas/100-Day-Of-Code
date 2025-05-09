@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+  margin: 0;
+  background-color: #000002 ;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+svg {
+  height: 100vmin;
+  left: calc(50% - 50vmin);
+  position: absolute;
+  width: 100vmin;
+}
